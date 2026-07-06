@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+body {
+  background-color: #050505; /* Deep black background */
+  color: #FFFFFF;
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+@theme {
+  --color-neonLime: #CCFF00;       /* Neon Lime Accent */
+  --color-darkBg: #050505;         /* Pure Deep Black */
+  --color-cardBg: #0C0C0E;         /* Dark Card Charcoal */
+  --color-cardBgHover: #131316;    /* Hover State Charcoal */
+  --color-cartelDark: #050505;     /* Naming compatibility */
+  --color-cartelGray: #9E9EA7;
+  
+  --animate-spin-slow: spin-slow 20s linear infinite;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom Glassmorphism Cards */
+.glass-card {
+  background: rgba(12, 12, 14, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(204, 255, 0, 0.25);
+  background: rgba(19, 19, 22, 0.85);
+  box-shadow: 0 12px 40px -12px rgba(204, 255, 0, 0.12);
+}
+
+/* Accent neon shadow border */
+.neon-border-glow {
+  border-color: #CCFF00;
+  box-shadow: 0 0 20px rgba(204, 255, 0, 0.2);
+}
+
+/* Text glow */
+.text-glow-neon {
+  text-shadow: 0 0 10px rgba(204, 255, 0, 0.3);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #1C1C1E;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #CCFF00;
+}

@@ -28,7 +28,7 @@ export default function Header({ scrolled }) {
             aria-label="Detailing Cartel Home"
           >
             <img
-              src="/images/detailing cartel nav.png"
+              src="/images/detailing cartel_nav.png"
               alt="Detailing Cartel Logo"
               className="absolute left-0 top-1/2 -translate-y-[45%] h-18 sm:h-30 w-auto object-contain transition-transform duration-300 group-hover:scale-[1.03] z-50 drop-shadow-[0_6px_16px_rgba(0,0,0,0.65)]"
              

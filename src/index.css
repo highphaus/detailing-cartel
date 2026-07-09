@@ -59,9 +59,23 @@ button, input, select, textarea, a {
   box-shadow: 0 0 20px rgba(233, 0, 26, 0.2);
 }
 
-/* Text glow */
+/* Text glow and contrast shadows */
+.text-shadow-heavy {
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.98), 0 2px 4px rgba(0, 0, 0, 0.95);
+}
+
 .text-glow-neon {
-  text-shadow: 0 0 10px rgba(233, 0, 26, 0.3);
+  text-shadow: 0 4px 16px rgba(0, 0, 0, 0.98), 0 0 10px rgba(233, 0, 26, 0.9), 0 0 20px rgba(233, 0, 26, 0.5);
+}
+
+@media (max-width: 639px) {
+  .mobile-text-shadow {
+    text-shadow: 0 4px 16px rgba(0, 0, 0, 0.98), 0 2px 4px rgba(0, 0, 0, 0.95);
+  }
+}
+
+.text-shadow-light {
+  text-shadow: 0 1px 4px rgba(255, 255, 255, 0.95), 0 2px 8px rgba(255, 255, 255, 0.85);
 }
 
 /* Scrollbar styling */

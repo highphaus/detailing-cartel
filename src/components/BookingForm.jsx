@@ -67,3 +67,4 @@ export default function BookingForm({ formData, setFormData, isSubmitted, onSubm
     </section>
   );
 }
+

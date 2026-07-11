@@ -18,18 +18,20 @@ export default function BeforeAfterSlider({ sliderPosition, setSliderPosition })
 
         <div className="lg:col-span-8 relative reveal-right">
           <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] rounded-3xl overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.8)] select-none">
-            <div className="absolute inset-0 bg-[#121214]">
-              <img src={scratchPaint} alt="Scratched Paint" className="w-full h-full object-cover" />
-             
+            <div className="absolute inset-0 bg-[#121214] ">
+              <img src={glossyPaint} alt="Scratched Paint" className="w-full h-full object-cover" />
+             <div className="absolute right-6 bottom-6 bg-[#E9001A] px-4 py-2 rounded-lg z-20">
+                <span className="text-[10px] font-bold tracking-widest text-white font-sans">After</span>
+              </div>
             </div>
 
             <div 
               className="absolute inset-0 bg-[#0C0C0E] transition-all ease-out pointer-events-none"
               style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
             >
-              <img src={glossyPaint} alt="Ceramic Coated Paint" className="w-full h-full object-cover" />
-              <div className="absolute right-6 bottom-6 bg-[#E9001A] px-4 py-2 rounded-lg z-20">
-                <span className="text-[10px] font-bold tracking-widest text-white font-sans">10H CERAMIC SHIELD // ACTIVE</span>
+              <img src={scratchPaint} alt="Ceramic Coated Paint" className="w-full h-full object-cover" />
+              <div className="absolute left-6 bottom-6 bg-[#E9001A] px-4 py-2 rounded-lg z-20">
+                <span className="text-[10px] font-bold tracking-widest text-white font-sans">Before</span>
               </div>
             </div>
 

@@ -27,7 +27,7 @@ export default function Header({ scrolled }) {
           {/* Logo */}
          <a
   href="#hero"
-  className="relative flex items-center shrink-0 h-20 w-56 sm:w-64 lg:w-72"
+  className="relative flex items-center shrink-0 h-20 w-56 sm:w-72 lg:w-80"
   aria-label="Detailing Cartel Home"
 >
   <img
@@ -38,9 +38,9 @@ export default function Header({ scrolled }) {
       left-0
       top-1/2
       -translate-y-1/2
-      h-28
-      sm:h-24
-      lg:h-24
+      h-32
+      sm:h-28
+      lg:h-32
       w-auto
       max-w-none
       object-contain

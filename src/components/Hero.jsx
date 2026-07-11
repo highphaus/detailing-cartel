@@ -1,5 +1,6 @@
 import React from "react";
 import heroStudio from "../assets/hero_studio.png";
+import heroStudioMobile from "../assets/hero_studio_mobile.png";
 
 export default function Hero() {
   return (
@@ -9,17 +10,32 @@ export default function Hero() {
     >
       {/* Background */}
       <div className="absolute inset-0">
+        {/* Mobile Image */}
         <img
-          src={heroStudio}
+          src={heroStudioMobile}
           alt="Detailing Cartel Studio"
           className="
             absolute inset-0
             h-full w-full
             object-cover
-            object-[70%_center]
-            sm:object-[75%_center]
-            md:object-right
-            lg:object-right
+            object-center
+            sm:hidden
+          "
+        />
+
+        {/* Desktop Image */}
+        <img
+          src={heroStudio}
+          alt="Detailing Cartel Studio"
+          className="
+            hidden
+            sm:block sm:absolute sm:inset-0
+            h-full w-full
+            object-cover
+            object-[50%_center]
+            sm:object-[55%_center]
+            md:object-center
+            lg:object-center
           "
         />
 
@@ -31,7 +47,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex items-center min-h-screen">
+      <div className="relative z-10 flex items-center min-h-screen pt-[32rem] sm:pt-0">
         <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12">
 
           <div className="max-w-xs sm:max-w-md lg:max-w-xl">
@@ -46,21 +62,21 @@ export default function Hero() {
               integrity, and perfecting factory clear coats.
             </p>
 
-            <div className="mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <div className="mt-8 flex flex-row gap-2 sm:gap-4">
 
               <a
                 href="#configurator"
-                className="flex justify-center rounded-xl bg-[#E9001A] px-6 py-3 text-[11px] font-bold uppercase tracking-[0.18em] text-white transition hover:bg-white hover:text-black"
+                className="flex justify-center rounded-xl bg-[#E9001A] px-3 sm:px-6 py-3 text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.18em] text-white transition hover:bg-white hover:text-black flex-1 sm:flex-none"
               >
                 Deploy Shield
               </a>
 
               <a
                 href="#slider-section"
-                className="flex justify-center items-center gap-2 rounded-xl border border-[#2A2A2A] bg-[#111111]/90 px-6 py-3 text-[11px] font-bold uppercase tracking-[0.18em] text-white transition hover:border-[#E9001A]"
+                className="flex justify-center items-center gap-2 rounded-xl border border-[#2A2A2A] bg-[#111111]/90 px-3 sm:px-6 py-3 text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.18em] text-white transition hover:border-[#E9001A] flex-1 sm:flex-none"
               >
                 <svg
-                  className="h-4 w-4 fill-current text-[#E9001A]"
+                  className="h-3 sm:h-4 w-3 sm:w-4 fill-current text-[#E9001A]"
                   viewBox="0 0 24 24"
                 >
                   <path d="M8 5v14l11-7z" />

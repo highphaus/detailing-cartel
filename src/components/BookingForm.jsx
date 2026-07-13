@@ -48,7 +48,7 @@ export default function BookingForm({ formData, setFormData, isSubmitted, onSubm
               >
                 <option value="Standard Shield">Standard Shield</option>
                 <option value="Pro Crystalline">Pro Crystalline</option>
-                <option value="Diamond Package">Diamond Package</option>
+                <option value="Diamond Matrix">Diamond Matrix</option>
               </select>
             </div>
           </div>

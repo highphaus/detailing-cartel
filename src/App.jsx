@@ -68,9 +68,13 @@ export default function App() {
   };
 
   const getCoatingSpecs = () => {
-    const baseCost = selectedCoating === 'Ceramic' ? 22000 : selectedCoating === 'Borophene' ? 38000 : 52000;
-    const layerMultiplier = selectedCoating === 'Ceramic' ? 4000 : selectedCoating === 'Borophene' ? 6000 : 8000;
-    const cost = baseCost + (coatingLayers - 1) * layerMultiplier;
+    const coatingBaseCost = {
+      Ceramic: 9999,
+      Borophene: 14999,
+      'Nano Diamond': 19999,
+    };
+
+    const cost = coatingBaseCost[selectedCoating] + (coatingLayers - 1) * 5000;
 
     const curingTime = selectedCoating === 'Ceramic' ? 12 + coatingLayers * 2 : selectedCoating === 'Borophene' ? 18 + coatingLayers * 3 : 24 + coatingLayers * 4;
     const hydrophobicAngle = selectedCoating === 'Ceramic' ? 110 + coatingLayers : selectedCoating === 'Borophene' ? 115 + coatingLayers : 120 + coatingLayers;

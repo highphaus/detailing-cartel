@@ -137,21 +137,22 @@ export default function ServicesGrid() {
         }}
         autoplay={{ delay: 5000, disableOnInteraction: false }}
         loop={true}
-        spaceBetween={20}
+        spaceBetween={24}
         slidesPerView={1}
         breakpoints={{
           640: { slidesPerView: 1 },
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
-        className="pb-16"
+        className="pb-16 !items-stretch"
+        style={{ alignItems: 'stretch' }}
       >
         {services.map((service) => (
-          <SwiperSlide key={service.id}>
-            <div className="group relative bg-[#0C0C0E] border border-white/5 rounded-3xl p-6 sm:p-8 hover:border-white/10 transition-all duration-500 h-full flex flex-col">
+          <SwiperSlide key={service.id} style={{ height: 'auto' }} className="flex">
+            <div className="group relative bg-[#0C0C0E] border border-white/5 rounded-3xl p-6 sm:p-8 hover:border-white/10 transition-all duration-500 w-full h-full flex flex-col">
               <div className={`absolute inset-0 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${service.glow}`} />
 
-              <div className="relative z-10 flex flex-col h-full">
+              <div className="relative z-10 flex flex-col flex-1">
                 <div className="mb-6">
                   <span className="text-[#E9001A] text-3xl font-black">
                     {service.id}

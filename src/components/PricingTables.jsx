@@ -13,10 +13,10 @@ export default function PricingTables({ onSelectPackage }) {
       tier: "Entry Tier",
       price: "₹18,000",
       description:
-        "Essential paint correction and 2-layer high-solids silica coating providing robust scratch protection.",
+        "Essential paint correction and 1-year high-solids silica coating providing robust scratch protection.",
       features: [
-        "9H Ceramic Coating (2 Layers)",
-        "2 Years Warranty Protection",
+        "9H Ceramic Coating (1 Year)",
+        "1 Year Warranty Protection",
         "Single-Stage Polish Correction",
       ],
       button: "Standard Shield",
@@ -30,8 +30,8 @@ export default function PricingTables({ onSelectPackage }) {
       description:
         "Advanced molecular shielding incorporating chemical scratch resistance. Forms thick glass-like armor.",
       features: [
-        "10H Hardness Rating (3 Layers)",
-        "5 Years Warranty Protection",
+        "10H Hardness Rating (2 Years)",
+        "2 Years Warranty Protection",
         "Multi-Stage Clarity Decontamination",
       ],
       button: "Pro Crystalline",
@@ -39,17 +39,17 @@ export default function PricingTables({ onSelectPackage }) {
     },
 
     {
-      name: "Diamond Matrix",
+      name: "Diamond Package",
       tier: "Apex Tier",
       price: "₹55,000",
       description:
-        "Unmatched carbon-nanotube cross-linked matrix offering carbon self-healing layout structures.",
+        "Unmatched carbon-nanotube cross-linked package offering carbon self-healing layout structures.",
       features: [
-        "10H Diamond Matrix (5 Layers)",
-        "Lifetime Warranty & Top-ups",
+        "10H Diamond Package (3 Years)",
+        "3 Years Warranty Protection",
         "3-Stage Absolute Mirror Correction",
       ],
-      button: "Diamond Matrix",
+      button: "Diamond Package",
       recommended: false,
     },
   ];

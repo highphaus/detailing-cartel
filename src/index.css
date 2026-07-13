@@ -222,7 +222,6 @@ button, input, select, textarea, a {
   transform: scale(1);
 }
 
-/* Stagger Delays */
 .delay-100 { transition-delay: 100ms; }
 .delay-150 { transition-delay: 150ms; }
 .delay-200 { transition-delay: 200ms; }
@@ -230,3 +229,20 @@ button, input, select, textarea, a {
 .delay-300 { transition-delay: 300ms; }
 .delay-400 { transition-delay: 400ms; }
 .delay-500 { transition-delay: 500ms; }
+
+/* ── Equal-height Swiper Slides ── */
+.swiper-wrapper {
+  align-items: stretch !important;
+}
+
+.swiper-slide {
+  height: auto !important;
+  display: flex !important;
+  flex-direction: column;
+}
+
+.swiper-slide > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}

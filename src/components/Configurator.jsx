@@ -78,7 +78,7 @@ export default function Configurator({
               </span>
 
               <h3 className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-white">
-                SIMULATE COATING MATRIX
+                SIMULATE COATING PACKAGE
               </h3>
 
             </div>
@@ -121,11 +121,11 @@ export default function Configurator({
               <div className="flex justify-between text-xs font-bold uppercase tracking-wider text-[#9E9EA7]">
 
                 <span>
-                  Active Layer Thickness
+                  Package
                 </span>
 
                 <span className="text-[#E9001A]">
-                  {coatingLayers} {coatingLayers === 1 ? 'Layer' : 'Layers'} Matrix
+                  {coatingLayers === 1 ? '1 Year' : coatingLayers === 2 ? '2 Year' : '3 Year'}
                 </span>
 
               </div>
@@ -134,7 +134,7 @@ export default function Configurator({
               <input
                 type="range"
                 min="1"
-                max="5"
+                max="3"
                 value={coatingLayers}
                 onChange={(e)=>setCoatingLayers(Number(e.target.value))}
                 className="custom-range-input w-full"

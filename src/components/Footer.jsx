@@ -40,10 +40,10 @@ export default function Footer() {
                 </p>
 
                 <a
-                  href="mailto:info@detailingcartel.com"
+                  href="mailto:detailingcarteltvm@gmail.com"
                   className="text-white hover:text-emerald-400 transition"
                 >
-                  info@detailingcartel.com
+                  detailingcarteltvm@gmail.com
                 </a>
               </div>
 
@@ -68,7 +68,7 @@ export default function Footer() {
                 </p>
 
                 <p className="text-white/70">
-                  Kerala, India
+                  Opposite True Value Cars, Thiruvallom, Trivandrum, Kerala
                 </p>
               </div>
 
